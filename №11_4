@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+int K;
+double P,S;
+S=1000;
+cin>>P;
+K=0;
+if(P>0&&P<25) 
+ { 
+    while(S<=1100)
+    {
+    S+=S*(P/100);
+    K++;
+    }
+    cout<<"K="<<K<<endl<<"S="<<S;
+ }
+ else
+ cout<<"Invalid values";
+return 0;
+}
