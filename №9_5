@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+int main()
+{
+int a,col,anim;
+cin>>a;
+string color[5]={"zeleno","krasno","jelto","belo","cherno"};
+string animal[12]={"i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i oshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i",};
+if(a>=0) {
+    col=((a-4)%60)/12;
+    anim=((a-4)%60)%12;
+    cout<<"God "<<color[col]<<animal[anim];
+}
+else cout<<"Invalid values";
+}
