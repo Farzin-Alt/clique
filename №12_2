@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int Sign()
+{
+    double x;
+    cin>>x;
+    if (x<0) x=-1;
+    else
+    {
+        if(x==0) x=0;
+        else
+        x=1;
+    }
+cout<<x;
+}
+
+int main() 
+{
+double A,B;
+Sign(A, B);
+cout<<A+B;
+return 0;
+}
