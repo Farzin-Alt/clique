@@ -1,18 +1,52 @@
 #include <iostream>
-#include <cmath>
-#include <string>
+
 using namespace std;
+
 
 int main()
 {
-int a,col,anim;
-cin>>a;
-string color[5]={"zeleno","krasno","jelto","belo","cherno"};
-string animal[12]={"i krisi","i korovi","go tigra","go zaica","go drakona","i zmei","i oshadi","i ovci","i obez'yani","i kurici","i sobaki","i svin'i",};
-if(a>=0) {
-    col=((a-4)%60)/12;
-    anim=((a-4)%60)%12;
-    cout<<"God "<<color[col]<<animal[anim];
+    int N;
+    cin>>N;
+    cout<<"Год"; 
+    
+    switch(N%10){
+        
+        case 0: 
+        case 1: cout<<"бел"; break;
+        case 2: 
+        case 3: cout<<"чер"; break;
+        case 4: 
+        case 5: cout<<"зелен"; break;
+        case 6: 
+        case 7: cout<<"красн"; break;
+        case 8: 
+        case 9: cout<<"желт"; break;
+    
+    }
+   
+switch(N%12){
+    
+      case 6: 
+      case 7: 
+      case 8: cout<<"ого"; break;
+      default: cout<<"ой";
+             break;
 }
-else cout<<"Invalid values";
+    
+    switch((N+8)%12){
+        
+        case 0: cout<<"крысы"; break;
+        case 1: cout<<"коровы"; break;
+        case 2: cout<<"тигра"; break;
+        case 3: cout<<"зайца"; break;
+        case 4: cout<<"дракона"; break;
+        case 5: cout<<"змеи"; break;
+        case 6: cout<<"лошади"; break;
+        case 7: cout<<"овцы"; break;
+        case 8: cout<<"обезьяны"; break; 
+        case 9: cout<<"курицы"; break;
+        case 10: cout<<"собаки"; break;
+        case 11: cout<<"свиньи"; break;
+    }
+    return 0;
 }
