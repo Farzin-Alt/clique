@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+
+    int n, a, b;
+    cout << "Enter size: ";
+    cin >> n;
+    cout << "Enetr first element: ";
+    cin >> a;
+    cout << "Enter second element: ";
+    cin >> b;
+
+    int *arr = new int[n];
+    arr[0] = a; arr[1] = b;
+
+    for(int i = 2; i < n; i++)
+        arr[i] = arr[i - 1] + arr[i - 2];
+
+    for(int i = 0; i < n; i++)
+        cout << "Element " << i << ": " << arr[i] << endl;
+
+    return 0;
+}
