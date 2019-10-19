@@ -1,18 +1,20 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
 
-void PowerA3()
-{
-    double A,B;
-    cin>>A;
-    B=pow(A,3);
-    cout<<B<<endl;
+void Power3A(double a, double &b){
+    b = a * a * a;
 }
 
-int main() 
+int main()
 {
-for(int i=1; i<=5; i++)
-PowerA3(A, B);
-return 0;
+
+    double b, a;
+    cout << "Enter a: ";
+    cin >> a;
+
+    Power3A(a, b);
+    cout << "Result: " << b;
+
+    return 0;
 }
