@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    double a1, b1, c1, a2, b2, c2, a_t, y, x;
+
+    cout << "Enter A1, B1, C1: ";
+    cin >> a1 >> b1 >> c1;
+
+    cout << "Enter A2, B2, C2: ";
+    cin >> a2 >> b2 >> c2;
+
+    a_t = a2 / a1;
+    y = b2 - a_t * b1;
+
+    y = (c2 - a_t * c1) / y;
+    x = (c1 - b1 * y) / a1;
+
+    cout << "X: " << x << endl << "Y: " << y;
+
+    return 0;
+}
