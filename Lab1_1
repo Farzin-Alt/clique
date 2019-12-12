@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+  setlocale(LC_ALL, "Russian");
+  do{
+  cout << "Ââåäèòå À è Â: ";
+
+  double a, b;
+
+  cin >> a >> b;
+
+  if(a <= 0 || b <= 0) {
+   cout << "Íåêîððåêòíûå äàííûå" << endl;
+  }
+  else {
+      cout << "S= " << a*b << endl << "P= " << 2*(a+b);
+      break;
+  }
+  } while(true);
+
+  return 0;
+}
