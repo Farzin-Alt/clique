@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int n;
+    cout << "Enter seconds: ";
+    cin >> n;
+
+    cout << "Seconds passed: " << n % 60;
+
+    return 0;
+}
