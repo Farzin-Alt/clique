@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int a, b;
+    do{
+    cout << "Enter A: ";
+    cin >> a;
+
+    cout << "Enter B: ";
+    cin >> b;
+}while(a < b);
+
+    cout << "Free space of A: " << a % b;
+
+    return 0;
+}
