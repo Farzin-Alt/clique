@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int a, b;
+    do{
+    cout << "Enter number: ";
+    cin >> a;
+}while(a <= 100 || a > 1000);
+
+    b = a % 100;
+    a /= 100;
+
+    cout << "Result: " << b * 10 + a;
+
+    return 0;
+}
