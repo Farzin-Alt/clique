@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter x: ";
+    double x;
+    cin >> x;
+
+    cout << "Function: " << 4*pow(x-3, 6) - 7*pow(x-3, 3) + 2;
+
+    return 0;
+}
