@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x, y;
+    do{
+        cout << "Enter coords: ";
+        cin >> x >> y;
+    } while(x == 0 || y == 0);
+
+    if(x > 0 && y > 0) cout << "I";
+    else if(x > 0 && y < 0) cout << "IV";
+    else if(x < 0 && y > 0) cout << "II";
+    else cout << "III";
+
+    return 0;
+}
