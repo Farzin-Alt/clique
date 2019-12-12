@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+
+    cout << "Enter A, B and C: ";
+    cin >> a >> b >> c;
+
+    cout << "The right of inequality is ";
+    if(a < b && b < c) cout << "true";
+    else cout << "false";
+
+    return 0;
+}
