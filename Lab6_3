@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int k, n;
+
+    cout << "Enter day of year: ";
+    cin >> k;
+    cout << "Enter day of week of 1 day: ";
+    cin >> n;
+
+    cout << "Day of week: " << (n + k % 7 - 1) % 7;
+
+    return 0;
+}
