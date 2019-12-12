@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double a;
+    cout << "Enter a: ";
+    cin >> a;
+
+    double b = a * a; //b = a^2
+    b *= a; //b = a^3
+    double c = b * b; //c = a^6
+    c *= c; // c = a^12
+    c *= b; // c = a^15
+
+    cout << "Result: " << c;
+
+    return 0;
+}
