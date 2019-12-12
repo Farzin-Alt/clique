@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    cout << "Enter angle: ";
+    double a;
+    cin >> a;
+
+    cout << "Radians: " << a / 180 << "pi";
+
+    return 0;
+}
