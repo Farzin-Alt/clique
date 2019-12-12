@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double a, b, c;
+
+    cout << "Enter A, B, C: ";
+    cin >> a >> b >> c;
+
+    cout << "Result: " << (c - a)*(b - c);
+
+    return 0;
+}
