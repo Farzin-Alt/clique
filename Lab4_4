@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    double V1, V2, t, S;
+
+    cout << "Enter speed 1: ";
+    cin >> V1;
+
+    cout << "Enter speed 2: ";
+    cin >> V2;
+
+    cout << "Enter time and distance: ";
+    cin >> t >> S;
+
+    cout << "S = " << S + t * (V1 + V2);
+
+    return 0;
+}
