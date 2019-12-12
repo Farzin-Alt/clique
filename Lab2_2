@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double a, b, c;
+
+    cout << "Enter A, B, C: ";
+    cin >> a >> b >> c;
+
+    double ac = (a - c) < 0 ? -1*(a - c) : (a - c);
+    double bc = (b - c) < 0 ? -1*(b - c) : (b - c);
+    cout << "Length of AC: " << ac << endl << "Length of BC: " << bc << endl << "Length of AC + BC: " << ac+ bc;
+
+    return 0;
+}
