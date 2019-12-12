@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void change(double &a, double &b){
+    double temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+int main()
+{
+    double a = 8.0, b = 10.0, c = 7.91;
+
+    cout << "A: " << a << " B: " << b << " C: " << c <<endl;
+    change(a, b);
+    change(a, c);
+    cout << "New A: " << a << " New B: " << b << " New C: " << c;
+
+    return 0;
+}
