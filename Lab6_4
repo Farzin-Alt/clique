@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int a, b, c;
+
+    cout << "Enter A and B: ";
+    cin >> a >> b;
+    cout << "Enter C: ";
+    cin >> c;
+
+    int m, n;
+    m = a - a % c;
+    n = b - b % c;
+
+    cout << "Count of squares: " << (m * n) / (c * c) << endl;
+    cout << "Free space: " << (a * b) - (m * n);
+
+    return 0;
+}
