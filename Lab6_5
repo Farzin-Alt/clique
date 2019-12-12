@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int a, century;
+    cout << "Enter year: ";
+    cin >> a;
+
+    century = a % 100 > 0 ? a / 100 + 1 : a / 100;
+    cout << century << " century";
+    return 0;
+}
