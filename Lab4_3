@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    double a, X, Y;
+
+    cout << "Enter mass X and price A: ";
+    cin >> X >> a;
+
+    cout << "Enter mass Y: ";
+    cin >> Y;
+
+    cout << "Price for 1 kg: " << a / X << endl;
+    cout << "Price for " << Y << " kg: " << a / X * Y;
+
+    return 0;
+}
