@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+
+    double ax, ay, bx, by, cx, cy, distance_c, distance_b;
+    cout << "Enter A coords: ";
+    cin >> ax >> ay;
+    cout << "Enter B coords: ";
+    cin >> bx >> by;
+    cout << "Enter C coords: ";
+    cin >> cx >> cy;
+
+    distance_b = sqrt((bx - ax)*(bx - ax) + (by - ay)*(by - ay));
+    distance_c = sqrt((cx - ax)*(cx - ax) + (cy - ay)*(cy - ay));
+
+    if(distance_b < distance_c) cout << "B, " << distance_b;
+    else cout << "C, " << distance_c;
+
+    return 0;
+}
