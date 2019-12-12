@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int a;
+    cout << "Enter a: ";
+    cin >> a;
+
+    cout << "The right of saying is ";
+    if(a % 2 == 0 && ((a > -100 && a < -9) || (a > 9 && a < 100)))
+        cout << "true";
+    else cout << "false";
+
+    return 0;
+
+}
