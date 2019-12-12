@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int k;
+
+    cout << "Enter day: ";
+    cin >> k;
+
+    cout << "Day of week: " << k % 7;
+
+    return 0;
+}
