@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int bytes, kbytes;
+    do{
+    cout << "Enter size in bytes: ";
+    cin >> bytes;
+}while(bytes < 0);
+
+    kbytes = bytes % 1024 > 0 ? bytes / 1024 + 1 : bytes / 1024;
+
+    cout << "Size in KB: " << kbytes;
+    return 0;
+}
